@@ -1,5 +1,6 @@
 package com.example.admin.laba1;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,14 +16,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View v){
-        TextView tv = (TextView)findViewById(R.id.textView);
-
-
-        if(tv.getVisibility() == View.VISIBLE){
-            tv.setVisibility(View.INVISIBLE);
-        } else {
-            tv.setVisibility(View.VISIBLE);
-        }
-
+       Intent intent = new Intent(MainActivity.this,Registration.class);
+       startActivity(intent);
     }
 }
