@@ -1,8 +1,12 @@
 package com.example.admin.laba1;
 
 import android.content.Intent;
+import android.media.AudioFormat;
+import android.media.AudioRecord;
+import android.media.MediaRecorder;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -38,13 +42,9 @@ public class Registration extends AppCompatActivity {
                 }
             }
         });th.start();
-               /*TextView tv = (TextView)findViewById(R.id.textView);
 
-
-        if(tv.getVisibility() == View.VISIBLE){
-            tv.setVisibility(View.INVISIBLE);
-        } else {
-            tv.setVisibility(View.VISIBLE);
-        }*/
     }
+
+
+
 }
